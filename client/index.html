@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <span class="navbar_title">Todo App!</span>
+    <div class="button">
+        <button class="signup_btn nav_btn">Sign Up</button>
+        <button class="login_btn nav_btn">Login</button>
+        <button class="logout_btn nav_btn">Logout</button>
+    </div>
+</div>
+<div class="info">
+    <h1 class="title">Welcome To Todo App</h1>
+    <span>Login to Start!</span>
+</div>
+<div class="container">
+    <div class="todo">
+        <h1>Todo Application</h1>
+        <label>Title:</label>
+        <br>
+        <input id="title" />
+        <br><br>
+        <label>Description:</label>
+        <br>
+        <textarea id="description"></textarea>
+        <br><br>
+        <button id="btn" onclick="createtodo()">Save</button>
+    </div>
+    <div class="listitem">
+        <ul id="todoList"> </ul>
+    </div>
+</div>
+   <div class="auth">
+    <div class="signup">
+        <span class="signup_title auth_t">Sign Up!</span>
+       
+        <label>Username:</label>
+        <input class="signup_username input" type="text" placeholder="Username">
+        <label>Password:</label>
+        <input class="signup_password input" type="password" placeholder="Password">
+        <button class="auth_signup_btn btn">Sign Up</button>
+        <span class="extra">Alredy have n account Login</span>
+    </div>
+    <div class="signup login">
+        <span class="login_title auth_t">Login!</span>
+  
+        <label>Username:</label>
+        <input class="login_username input" type="text" placeholder="Username">
+        <label>Password:</label>
+        <input class="login_password input" type="password" placeholder="Password">
+        <button class="auth_login_btn btn">Login</button>
+        <span class="extra">Don't have an account Signup</span>
+    </div>
+   </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>
