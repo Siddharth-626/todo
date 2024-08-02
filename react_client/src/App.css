@@ -1,0 +1,195 @@
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+     background-image: url("https://plus.unsplash.com/premium_photo-1706191097489-8d15de09e3f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+     background-size: cover;
+     background-position: center;
+}
+.navbar {
+    margin: -8px -8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: whitesmoke;
+    font-family: sans-serif;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+
+
+.authbtn {
+    padding: 10px 10px;
+    margin: 5px;
+    border: none;
+    color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signupBtn {
+    background-color: orangered;
+}
+
+.loginBtn {
+    background-color: green;
+}
+.logoutBtn{
+    background-color: orange;
+}
+.navTitle {
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+}
+
+.signup,.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 37%;
+    margin-top: 10%;
+    width: 20%;
+    height: 20%;
+    padding: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.authsignup{
+    background-color: orangered;
+}
+.authlogin{
+    background-color: green;
+}
+
+.auth_input{
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  font-size: 40px;
+  font-family: sans-serif;
+  }
+  
+  .content {
+    max-width: 50%;
+  }
+  
+  .content h1 {
+    font-size: 300%;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .authBtn_div{
+     text-align: center;
+  }
+
+ .todoform{
+    font-family: sans-serif;
+    width: 20%;
+    height: 20%;
+    background-color: whitesmoke;
+    padding: 30px 30px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 10px;
+    border-color: black;
+    font-size: large;
+    
+ }
+
+ .todo-input{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.form-title{
+    font-size: 30px;
+}
+
+.form-btn{
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    background-color: lightslategray;
+    cursor: pointer;
+    float: right;
+
+}
+
+.todo{
+   display: flex;
+   flex-direction: row;
+
+
+}
+.gettodo{
+    font-family: sans-serif;
+    width: 24%;
+    background-color: whitesmoke;
+    padding: 30px 30px;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 10px;
+    border-color: black;
+    font-size: large;
+}
+
+li{
+    margin: 10px;
+}
+
+.gettodo-title{
+    font-size: 30px;
+    margin-left: 40%;
+
+}
+
+.get-startedBtn{
+    border: none;
+    color: white;
+    font-family: sans-serif;
+    border-radius: 10px;
+    padding: 20px 70px;
+    font-size: 20px;
+    background-color:#3498DB ;
+}
+
+.editBtn,.deleteBtn{
+   padding: 7px 30px;
+   border: none;
+   border-radius: 5px;
+   color: whitesmoke;
+   margin: 6px;
+   margin-left: 20px;
+   margin-right: -10px;
+
+}
+.editBtn{
+  background-color:#2ECC71;
+}
+
+.deleteBtn{
+    background-color:#E74C3C;
+}

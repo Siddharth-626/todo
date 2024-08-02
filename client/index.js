@@ -1,6 +1,4 @@
 
-
-
  const singup_btn = document.querySelector('.signup_btn');
  const signup = document.querySelector('.signup');
  const login = document.querySelector('.login');
