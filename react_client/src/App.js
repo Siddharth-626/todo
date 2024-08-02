@@ -1,12 +1,12 @@
-import React, { createContext, useState } from 'react';
+import React, {  useState } from 'react';
 import './App.css';
-import Navbar from './components/nav';
+import Navbar from './components/home-components/nav';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Landing from './components/landing';
+import Landing from './components/home-components/landing';
 import Signup from './components/auth-copmponents/signup';
 import Login from './components/auth-copmponents/login';
 import Todo from './components/todo-components/todo';
- export const context = createContext();
+import context from './utils/context ';
 function App() {
   const [login,setLogin] = useState(false);
 

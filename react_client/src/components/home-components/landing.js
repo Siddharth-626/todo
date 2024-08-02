@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { AuthBtns } from "./nav";
 import { useContext } from "react";
-import { context } from "../App";
+import context from "../../utils/context ";
 
 
 
