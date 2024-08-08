@@ -1,14 +1,15 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import context from "../../utils/context ";
 
 
 function Todoform(props) {
     const [tit,setTitle] = useState('');
     const [des,setDescription] = useState('');
-    
+    const { token } = useContext(context)
     function handleSave() {
         const data = {title:tit,description:des};
-        const token = localStorage.getItem('token');
+
         if(props.edit){
             console.log("edit");
             axios.put(`http://localhost:3000/todo/todos/${props.edit._id}`,data,{

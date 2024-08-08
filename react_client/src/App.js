@@ -9,10 +9,10 @@ import Todo from './components/todo-components/todo';
 import context from './utils/context ';
 function App() {
   const [login,setLogin] = useState(false);
-
+  const token = localStorage.getItem('token');
   return (
     <div className="App">
-      <context.Provider value={{login,setLogin}}>
+      <context.Provider value={{login,setLogin,token}}>
       <Router>
         <Navbar />
         <Routes>

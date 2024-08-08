@@ -1,11 +1,12 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import context from "../../utils/context ";
 
 
 
 function Gettodo(props) {
     const [data,setData] = useState([]);
-    const token = localStorage.getItem('token');
+    const { token } = useContext(context)
     function getData() {
         axios.get('http://localhost:3000/todo/todos',{
             headers:{
