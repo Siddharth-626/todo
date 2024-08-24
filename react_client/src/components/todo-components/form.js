@@ -48,13 +48,13 @@ function Todoform(props) {
     },[props])
 
     return(
-        <div className="todoform">
-            <span className="form-title">Add Your Todo Here</span><br></br>
-            <label>Title</label><br></br>
-            <input placeholder="Title" type="text" className="todo-input" onChange={titChange} value={tit}></input><br></br>
-            <label>Description</label><br></br>
-            <input placeholder="Description" type="text" className="todo-input" onChange={desChange} value={des}></input><br></br>
-            <button type="button" className="form-btn" onClick={handleSave} >{props.edit ? "Update" : "Save"}</button>
+        <div className="bg-slate-200 dark:bg-gray-800 p-8 rounded-lg  mx-20 my-20 w-1/5  h-1/5">
+            <span className="form-title text-slate-950 dark:text-slate-200">Add Your Todo Here</span><br></br>
+            <label className="text-slate-950 dark:text-slate-200">Title</label><br></br>
+            <input placeholder="Title" type="text" className="p-2.5 rounded mb-5" onChange={titChange} value={tit}></input><br></br>
+            <label className="text-slate-950 dark:text-slate-200">Description</label><br></br>
+            <input placeholder="Description" type="text" className="p-2.5 rounded mb-5" onChange={desChange} value={des}></input><br></br>
+            <button type="button" className="bg-blue-600 text-white px-7 py-3 rounded float-right" onClick={handleSave} >{props.edit ? "Update" : "Save"}</button>
         </div>
     )
 }

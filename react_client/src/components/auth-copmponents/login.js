@@ -24,15 +24,15 @@ function Login() {
         setPassword(e.target.value)
     }
     return (
-        <div className="login">
-            <span>Login</span><br></br>
-            <label>UserName</label>
+        <div className="login flex flex-col justify-center bg-slate-200 dark:bg-gray-800 rounded-lg mx-auto my-10 p-12 w-1/5">
+            <span className="text-slate-950 dark:text-slate-200">Login</span><br></br>
+            <label className="text-slate-950 dark:text-slate-200">UserName</label>
             <br></br>
-            <input placeholder="Username" className="auth_input" onChange={updateUsername} value={username}></input>
+            <input placeholder="Username" className=" px-2.5 py-2.5 rounded-md mb-5" onChange={updateUsername} value={username}></input>
             <br></br>
-            <label>password</label><br></br>
-            <input placeholder="password" type="password" className="auth_input" onChange={updatePassword} value={password}></input><br></br>
-            <button type="button" className="authbtn authlogin" onClick={handleLogin}>Login</button>
+            <label className="text-slate-950 dark:text-slate-200">password</label><br></br>
+            <input placeholder="password" type="password" className=" px-2.5 py-2.5 rounded-md" onChange={updatePassword} value={password}></input><br></br>
+            <button type="button" className="bg-green-600 p-3 rounded-md text-white" onClick={handleLogin}>Login</button>
         </div>
     )
 }

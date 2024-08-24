@@ -9,10 +9,11 @@ import Todo from './components/todo-components/todo';
 import context from './utils/context ';
 function App() {
   const [login,setLogin] = useState(false);
+  const [darkMode,setDarkMode] = useState(false);
   const token = localStorage.getItem('token');
   return (
-    <div className="App">
-      <context.Provider value={{login,setLogin,token}}>
+    <div className={`${darkMode && "dark"}`}>
+      <context.Provider value={{login,setLogin,token,darkMode,setDarkMode}}>
       <Router>
         <Navbar />
         <Routes>

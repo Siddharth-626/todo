@@ -1,3 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply transition-colors duration-700 ease-in-out;
+}
 body{
     background-color: rgba(0, 0, 0, 0.1);
      background-image: url("https://plus.unsplash.com/premium_photo-1706191097489-8d15de09e3f5?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
@@ -9,7 +16,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 10);
     color: whitesmoke;
     font-family: sans-serif;
     gap: 20px;

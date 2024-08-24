@@ -39,14 +39,14 @@ function Gettodo(props) {
          
     }
     return(
-        <div className="gettodo">
-            <span className="gettodo-title"> Todo List </span>
+        <div className="bg-slate-200 dark:bg-slate-800 p-8 rounded-md mx-20 my-20 w-1/4">
+            <span className="ml-64 text-3xl text-slate-950 dark:text-slate-200"> Todo List </span>
             <ul >
                 {data.map((item) => (
 
-                    <li key={item._id}>{item.title} : {item.description}
-                        <button className="editBtn" onClick={() => { updateTodo(item) }}>Edit</button>
-                        <button className="deleteBtn" onClick={() => { deleteTodo(item) }}>Delete</button>
+                    <li className="text-slate-950 dark:text-slate-200" key={item._id}>{item.title} : {item.description}
+                        <button className=" mx-6 bg-green-600 text-white px-8 py-2 rounded" onClick={() => { updateTodo(item) }}>Edit</button>
+                        <button className=" bg-red-600 text-white px-7 py-2 rounded" onClick={() => { deleteTodo(item) }}>Delete</button>
                     </li>
                 ))}
             </ul>
